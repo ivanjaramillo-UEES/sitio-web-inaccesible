@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      max-width: 500px;
+      margin: 40px auto;
+    }
+    h1 {
+      color: #cccccc; /* contraste insuficiente sobre fondo blanco */
+    }
+    .campo {
+      margin-bottom: 15px;
+    }
+    .campo input,
+    .campo textarea {
+      width: 100%;
+      padding: 6px;
+      border: 1px solid #dddddd;
+      color: #999999; /* texto de bajo contraste */
+    }
+    .texto-ayuda {
+      color: #cccccc; /* contraste insuficiente */
+      font-size: 12px;
+    }
+    .boton-enviar {
+      background-color: #e0e0e0;
+      color: #b0b0b0; /* botón con contraste insuficiente */
+      padding: 10px 20px;
+      text-align: center;
+      width: 150px;
+      cursor: pointer;
+      /* es un DIV, no un BUTTON: no es focalizable ni operable por teclado */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Formulario de Contacto</h1>
+
+  <div class="campo">
+    <input type="text" placeholder="Nombre completo">
+  </div>
+
+  <div class="campo">
+    <input type="email" placeholder="Correo electrónico">
+  </div>
+
+  <div class="campo">
+    <textarea rows="4" placeholder="Escribe tu mensaje"></textarea>
+    <div class="texto-ayuda">Máximo 200 caracteres</div>
+  </div>
+  
+  <div class="boton-enviar" onclick="alert('Formulario enviado')">
+    Enviar
+  </div>
+
+</body>
+</html>
